@@ -1,6 +1,6 @@
 import scala.util.Random
 
-object User {
+object RockPaperScissors {
 
   def main(args: Array[String]): Unit = {
     while (true) {
@@ -51,4 +51,5 @@ object User {
       lose
     }
   }
+
 }
