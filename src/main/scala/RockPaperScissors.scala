@@ -4,8 +4,23 @@ object RockPaperScissors {
 
   def main(args: Array[String]): Unit = {
 
+    var userScore = 0
+    var computerScore = 0
+    var drawGame = 0
+
+//    var score = "" + userScore + " " + computerScore + " " + drawGame + " "
+
     while (true) {
-      gamePlay()
+      val s = gamePlay();
+
+      if (s.equals("You won!")){
+        userScore += 1
+      } else if (s.equals("You lose")){
+        computerScore += 1
+      } else {
+        drawGame += 1
+      }
+      println(userScore + " " + computerScore + " " + drawGame + " ")
     }
   }
 
@@ -34,10 +49,10 @@ object RockPaperScissors {
     move
   }
 
-  def gamePlay () : Unit = {
+  def gamePlay () : String = {
 
     val win = "You won!"
-    val lose = "You lose :D"
+    val lose = "You lose"
 
     val user1 = userMove()
     val ai = computerMove()
@@ -45,14 +60,19 @@ object RockPaperScissors {
 
     if(user1 == ai) {
       println("Draw")
+      "Draw"
     } else if (user1.equals("Rock") && ai.equals("Scissors")) {
       println(win)
+      win
     } else if (user1.equals("Paper") && ai.equals("Rock")) {
       println(win)
+      win
     } else if (user1.equals("Scissors") && ai.equals("Paper")) {
       println(win)
+      win
     } else {
       println(lose)
+      lose
     }
   }
 }
