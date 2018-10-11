@@ -4,7 +4,6 @@ object RockPaperScissors {
 
   def main(args: Array[String]): Unit = {
 
-//    println(userMove())
     while (true) {
       gamePlay()
     }
@@ -20,7 +19,7 @@ object RockPaperScissors {
     val move = scala.io.StdIn.readLine()
 
     move match {
-      case  "Rock" => "Rock"
+      case  "Rock"  => "Rock"
       case  "Paper" => "Paper"
       case  "Scissors" => "Scissors"
       case _ => "Please Enter Rock, Paper or Scissors"
@@ -43,13 +42,14 @@ object RockPaperScissors {
     val user1 = userMove()
     val ai = computerMove()
     println(ai)
-//    val ai = "Rock"
 
-    if (user1.equalsIgnoreCase("Rock") && ai.equalsIgnoreCase("Scissors")) {
+    if(user1 == ai) {
+      println("Draw")
+    } else if (user1.equals("Rock") && ai.equals("Scissors")) {
       println(win)
-    } else if (user1.equalsIgnoreCase("Paper") && ai.equalsIgnoreCase("Rock")) {
+    } else if (user1.equals("Paper") && ai.equals("Rock")) {
       println(win)
-    } else if (user1.equalsIgnoreCase("Scissors") && ai.equalsIgnoreCase("Paper")) {
+    } else if (user1.equals("Scissors") && ai.equals("Paper")) {
       println(win)
     } else {
       println(lose)
