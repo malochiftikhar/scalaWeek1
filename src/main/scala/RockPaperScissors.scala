@@ -3,8 +3,10 @@ import scala.util.Random
 object RockPaperScissors {
 
   def main(args: Array[String]): Unit = {
+
+//    println(userMove())
     while (true) {
-      println(gamePlay())
+      gamePlay()
     }
   }
 
@@ -18,9 +20,9 @@ object RockPaperScissors {
     val move = scala.io.StdIn.readLine()
 
     move match {
-      case  "Rock" | "rock" => "Entered Rock"
-      case  "Paper" => "You entered Rock"
-      case  "Scissors" => "You entered Rock"
+      case  "Rock" => "Rock"
+      case  "Paper" => "Paper"
+      case  "Scissors" => "Scissors"
       case _ => "Please Enter Rock, Paper or Scissors"
     }
   }
@@ -30,26 +32,27 @@ object RockPaperScissors {
     val rand = new Random((System.currentTimeMillis()))
     val randomMove = rand.nextInt(moves.length)
     val move = moves(randomMove)
-    "AI played" + " " + move
+    move
   }
 
-  def gamePlay () : String = {
+  def gamePlay () : Unit = {
 
     val win = "You won!"
     val lose = "You lose :D"
 
     val user1 = userMove()
     val ai = computerMove()
+    println(ai)
+//    val ai = "Rock"
 
     if (user1.equalsIgnoreCase("Rock") && ai.equalsIgnoreCase("Scissors")) {
-      win
+      println(win)
     } else if (user1.equalsIgnoreCase("Paper") && ai.equalsIgnoreCase("Rock")) {
-      win
+      println(win)
     } else if (user1.equalsIgnoreCase("Scissors") && ai.equalsIgnoreCase("Paper")) {
-      win
+      println(win)
     } else {
-      lose
+      println(lose)
     }
   }
-
 }
