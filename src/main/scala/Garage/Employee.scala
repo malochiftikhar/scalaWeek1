@@ -1,0 +1,5 @@
+package Garage
+
+class Employee {
+
+}

@@ -1,3 +1,5 @@
+package Exercises
+
 import scala.util.Random
 
 object RockPaperScissors {

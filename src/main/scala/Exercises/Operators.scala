@@ -1,3 +1,5 @@
+package Exercises
+
 object Operators {
 
   def main(args: Array[String]): Unit = {

@@ -1,3 +1,5 @@
+package Exercises
+
 object BlackJack {
 
   def main(args: Array[String]): Unit = {

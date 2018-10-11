@@ -1,4 +1,4 @@
-import MethodRecursion.fizbuz
+package Exercises
 
 object PatternMatching {
 

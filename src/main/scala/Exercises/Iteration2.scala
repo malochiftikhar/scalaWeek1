@@ -1,3 +1,5 @@
+package Exercises
+
 object Iteration2 {
 
   def main(args: Array[String]): Unit = {

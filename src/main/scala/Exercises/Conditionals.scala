@@ -1,3 +1,5 @@
+package Exercises
+
 object Conditionals {
 
   def main(args: Array[String]): Unit = {

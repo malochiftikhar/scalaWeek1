@@ -1,3 +1,5 @@
+package Exercises
+
 object Parameters {
   def main(args: Array[String]): Unit = {
     Hello("ifti")
