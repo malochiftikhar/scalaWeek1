@@ -1,5 +1,5 @@
 package Garage
 
-class Employee {
+class Employee{
 
 }
