@@ -1,5 +1,5 @@
 package Garage
 
-class Bike {
+class Bike extends {
 
 }

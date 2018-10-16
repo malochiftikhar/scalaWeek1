@@ -40,11 +40,11 @@ object main {
     listStr.toArray
   }
 
-  def compare(userArray : Array[String], listOfWord: Array[String]): String = {
-
-    val listOfArrayThatMatch = new scala.collection.mutable.ArrayBuffer[String]()
+//  def compare(userArray : Array[String], listOfWord: Array[String]): String = {
+//
+//    val listOfArrayThatMatch = new scala.collection.mutable.ArrayBuffer[String]()
 
 //    for (i <-0 until listOfWord.length) {
 //    }
-  }
+//  }
 }

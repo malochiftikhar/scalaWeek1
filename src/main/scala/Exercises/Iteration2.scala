@@ -9,11 +9,12 @@ object Iteration2 {
 
   def rectangle(text : String, number : Int): Unit ={
 
-    for (i<- 0 until number){
-    for (i<-0 until number) {
+    for (i<- 0 until number; j<-0 until number){
+      if(j == 0) {
+        println()
+      }
       print(text)
     }
-      println()
-    }
+
   }
 }
