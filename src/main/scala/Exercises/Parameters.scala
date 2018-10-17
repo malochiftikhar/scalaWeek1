@@ -1,10 +1,7 @@
 package Exercises
 
 object Parameters {
-  def main(args: Array[String]): Unit = {
-    Hello("ifti")
+  def main(args: Array[String]): Unit = {hello("ifti")
   }
-  def Hello(name:String) : Unit = {
-    println(name)
-  }
+  def hello(name:String) : Unit = {println(name)}
 }

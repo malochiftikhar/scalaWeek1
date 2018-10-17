@@ -1,11 +1,10 @@
 package Garage
 
-import java.util
-
 class Garage {
 
   val listOfVehicles = new scala.collection.mutable.ArrayBuffer[Vehicle]()
   val listEmployees = new scala.collection.mutable.ArrayBuffer[Employee]()
+  val listOfParts = new scala.collection.mutable.ArrayBuffer[Part]()
 
 
   def addVehicle(vehicle: Vehicle): Unit = {
@@ -32,7 +31,9 @@ class Garage {
     listEmployees.foreach(println)
   }
 
-  def fixingVehicle(vehicleId: String, cost: Double, isFixed: Boolean): Unit = {}
+  def fixingVehicle(vehicleId: String, cost: Double, isFixed: Boolean): Unit = {
+
+  }
 
   def billing(vehicle: Vehicle): Unit = {
     var bill = 0;
@@ -44,11 +45,9 @@ class Garage {
   }
 
   def isGarageOpen(isOpen: Boolean): Unit = {
-
     isOpen match {
       case true => true
       case _ => false
     }
   }
-
 }
